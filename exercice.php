@@ -14,7 +14,7 @@ Si aucun nom n'est fourni, affichez "Bonjour anonyme" -->
 <body>
     <?php 
     
-    if ($_GET['user']){
+    if (isset($_GET['user'])){
         echo 'Bonjour ' . ($_GET["user"]) . '!';
     }else{
         echo "Bonjour anonyme! ";
